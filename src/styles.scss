@@ -31,6 +31,8 @@ body,
 .section {
   margin: 0;
   padding: 0;
+  font-family: "Fauna One", serif;
+
   // font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
@@ -168,11 +170,39 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
 }
 
+mat-card {
+  color: whitesmoke !important;
+
+  background: linear-gradient(rgba(38, 38, 43, 0.85), rgba(38, 38, 43, 0.95)),
+    url("https://images.pexels.com/photos/70232/pexels-photo-70232.jpeg?h=350&auto=compress") !important;
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75) !important;
+}
+
+mat-card-subtitle {
+  color: goldenrod !important;
+}
+
+.mat-tab-label .mat-tab-label-content {
+  font-family: "Fauna One", serif;
+  font-size: 20px;
+}
+
 div.nav-background ul,
 header,
 ul li {
   visibility: visible;
   opacity: 1;
+}
+
+.align-center {
+  padding-left: 0;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: goldenrod;
 }
 
 @media only screen and (max-width: 600px) {

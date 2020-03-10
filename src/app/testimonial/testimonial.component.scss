@@ -48,7 +48,7 @@ h5 {
   color: gray;
   font-size: 1rem;
   font-weight: 450;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   text-shadow: 0 1px #fff;
   line-height: 1.35rem;
@@ -62,7 +62,7 @@ h2 {
   margin: 1rem 0;
   font-size: 2rem;
   font-weight: bolder;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
 
   // letter-spacing:
@@ -178,7 +178,7 @@ div.img-wrapper img {
 @media screen and (min-width: 2000px) {
   h5,
   blockquote {
-    font-size: 1.7vw;
+    font-size: 1vw;
     line-height: 2.25vw;
   }
   h2 {

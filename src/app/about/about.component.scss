@@ -24,6 +24,7 @@ u {
 }
 span.chris {
   color: var(--dark-contrast);
+  font-family: "Oswald", sans-serif;
 }
 hr {
   width: 40vw;
@@ -31,7 +32,7 @@ hr {
 }
 
 #about-subtitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.75vw;
   font-weight: 600;
   letter-spacing: var(--letter-spacing);
@@ -60,7 +61,7 @@ hr {
   div#mobile-about-subtitle {
     padding-left: 2vw;
     padding-right: 2vw;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 1.75vw;
     letter-spacing: 1px;
     line-height: 5vh;
@@ -99,7 +100,7 @@ section {
   display: flex;
   flex-direction: row;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   overflow-x: hidden;
 }
 section .noscroll {
@@ -194,5 +195,5 @@ section .right .about p {
   color: #999;
 }
 section .title {
-  font-family: "Merriweather", serif;
+  font-family: "Oswald", sans-serif;
 }

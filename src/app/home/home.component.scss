@@ -251,7 +251,15 @@ button:hover:after {
   animation-delay: 0.5s;
 }
 
+h3,
+p {
+  font-family: "Fauna One", serif;
+  font-weight: 400;
+}
+
 .header-title {
+  font-family: "Brush Script MT", cursive;
+  font-size: 4.5rem;
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }

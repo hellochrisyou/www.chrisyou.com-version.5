@@ -61,6 +61,28 @@ p {
   text-align: justify;
 }
 
+/* Styles for the active tab label */
+#projectTabGroup .mat-tab-labels,
+#projectTabGroup .mat-tab-label.mat-tab-label-active,
+#projectTabGroup .mat-tab-group,
+#projectTabGroup .mat-tab-label,
+#projectTabGroup .mat-tab-header,
+#projectTabGroup .mat-tab-label-container,
+#projectTabGroup .mat-tab-list {
+  background-color: transparent !important;
+  color: black;
+}
+
+.mat-card-header {
+  text-align: center;
+}
+.mat-card-header .mat-card-subtitle {
+  font-weight: 475;
+  font-family: "Oswald", sans-serif;
+}
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
 @media only screen and (max-width: 719px) {
   mat-tab-group {
     margin-top: 4vw;
