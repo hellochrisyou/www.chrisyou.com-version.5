@@ -1,13 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>FinalVersionWebsite</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8" />
+  <title>Chris You's Website</title>
+  <base href="/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://bootstraptema.ru/plugins/2016/animate/animate.css" />
+  <link href="//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="//cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
-<body>
-  <app-root></app-root>
+<style>
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, black 0%, #222 50%, black 100%);
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+
+  .loader {
+    color: white;
+    font-family: Ubuntu Mono, sans-serif;
+    font-weight: bold;
+    animation-duration: 4s;
+    animation-name: spread;
+    animation-iteration-count: infinite;
+    transform: translatez(0, 0, 0);
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.3em;
+    letter-spacing: 6em;
+    text-indent: -100%;
+  }
+
+  @keyframes spread {
+    from {
+      letter-spacing: 6em;
+      text-indent: -150%;
+    }
+
+    5% {}
+
+    50% {
+      text-indent: 50%;
+      letter-spacing: 0.3em;
+    }
+
+    95% {}
+
+    to {
+      letter-spacing: 6em;
+      text-indent: 120%;
+    }
+  }
+</style>
+
+<body class="mat-typography">
+  <app-root>
+    <div class="background">
+      <p class="loader">Loading</p>
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:700" rel="stylesheet" type="text/css" />
+  </app-root>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

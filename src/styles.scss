@@ -1,1 +1,182 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Six+Caps);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway&display=swap;);
+
+:root {
+  --yellow-color: #ffd65e;
+  --dark-contrast: #1f2c30;
+  --title-size: 10rem;
+  --letter-spacing: 0.275rem;
+  --title-line-height: 14vh;
+  --logo-length: 8.5rem;
+  --mobile-logo-length: 5rem;
+  --yellow-border-width: 12vw;
+  --mobile-border-width: 12vw;
+  --horizontal-line-height: 1.22rem;
+}
+
+// Reset CSS
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+body,
+.container,
+.section {
+  margin: 0;
+  padding: 0;
+  // font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h2,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+h5,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+//   End
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.cy-logo {
+  display: inline-block;
+  height: var(--logo-length);
+  width: var(--logo-length);
+}
+
+hr {
+  height: var(--horizontal-line-height);
+  color: var(--yellow-color);
+  border-color: transparent;
+
+  margin: 1.5vw 0;
+  display: none;
+}
+
+.shared-title {
+  font-family: "Anton", sans-serif;
+  font-size: var(--title-size);
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--title-line-height);
+}
+
+hr {
+  background: #f1e767; /* Old browsers */
+  background: -moz-linear-gradient(top, #f1e767 0%, #feb645 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f1e767 0%, #feb645 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f1e767 0%,
+    #feb645 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+}
+
+div.nav-background ul,
+header,
+ul li {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  hr {
+    height: 0.5rem;
+  }
+}
