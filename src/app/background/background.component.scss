@@ -673,6 +673,19 @@ p.pLeftMargin {
     padding-top: 100px;
     padding-bottom: 100px;
   }
+  h3 {
+    letter-spacing: normal !important;
+  }
+  #parallax-world-of-ugg .parallax-one,
+  #parallax-world-of-ugg .parallax-two,
+  #parallax-world-of-ugg .parallax-three,
+  #parallax-world-of-ugg .parallax-four,
+  #parallax-world-of-ugg .parallax-five,
+  #parallax-world-of-ugg .parallax-six,
+  #parallax-world-of-ugg.parallax-seven {
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
 }
 @media screen and (max-width: 479px) {
   #parallax-world-of-ugg .block {
