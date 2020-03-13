@@ -174,7 +174,10 @@ a {
 #logout {
   cursor: pointer;
 }
-
+.mat-tab-header {
+  background-color: transparent;
+  border-bottom: none;
+}
 @media only screen and (max-width: 599px) {
   :host ::ng-deep .mat-tab-list .mat-ink-bar {
     height: 0.95vw;
