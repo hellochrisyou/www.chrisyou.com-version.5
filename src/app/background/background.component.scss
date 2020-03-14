@@ -648,6 +648,14 @@ p.pLeftMargin {
   margin: 0 auto;
 }
 
+p {
+  text-align: left;
+}
+
+.mat-tab-label .mat-tab-label-content {
+    font-size:0.7rem;
+}
+
 /* Media Queries */
 /**************************/
 @media screen and (max-width: 959px) and (min-width: 768px) {
