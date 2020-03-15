@@ -8,6 +8,7 @@ import { ProjectComponent } from './project/project.component';
 import { SkillComponent } from './skill/skill.component';
 import { BackgroundComponent } from './background/background.component';
 import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 const routes: Routes = [
@@ -24,8 +25,8 @@ const routes: Routes = [
     component: BackgroundComponent,
   },
   {
-    path: 'skill',
-    component: SkillComponent,
+    path: 'skills',
+    component: SkillsComponent,
   },
   {
     path: 'project',

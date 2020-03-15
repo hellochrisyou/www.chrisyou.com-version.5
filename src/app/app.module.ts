@@ -1,3 +1,4 @@
+import { SkillsComponent } from './skills/skills.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,7 +26,7 @@ import { BackgroundComponent } from './background/background.component';
     BackgroundComponent,
     ContactComponent,
     TestimonialComponent,
-    SkillComponent,
+    SkillsComponent,
     ProjectComponent,
     PrevVersionComponent,
     RecordingComponent

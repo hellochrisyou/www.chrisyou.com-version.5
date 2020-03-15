@@ -7,7 +7,7 @@
         <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
         <li><a routerLink="/about-me" routerLinkActive="active">About me</a></li>
         <li><a routerLink="/background" routerLinkActive="active">Background</a></li>
-        <!-- <li><a routerLink="/skill" routerLinkActive="active">Skills</a></li> -->
+        <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
         <li><a routerLink="/project" routerLinkActive="active">Projects</a></li>
         <li><a routerLink="/recording" routerLinkActive="active">Recordings</a></li>
         <li><a routerLink="/testimonial" routerLinkActive="active">Testimonials</a></li>
@@ -48,6 +48,9 @@
         <ng-template matTabContent> -->
         <app-background></app-background>
         <!-- </ng-template> -->
+      </mat-tab>
+      <mat-tab label="Skills">
+        <skills></skills>
       </mat-tab>
       <!-- <mat-tab label="Skills"> -->
       <!-- <ng-template mat-tab-label>
