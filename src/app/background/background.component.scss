@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300, 400, 700");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic");
+@import "_arrow.scss";
 
 // section {
 //   border-right: var(--yellow-border-width) solid var(--yellow-color);
@@ -397,7 +398,9 @@
 // }
 
 // New css
-
+h2 {
+  color: rgb(236, 241, 250) !important;
+}
 div.block span {
   font-style: italic;
 }
@@ -653,7 +656,7 @@ p {
 }
 
 .mat-tab-label .mat-tab-label-content {
-    font-size:0.7rem;
+  font-size: 0.7rem;
 }
 
 /* Media Queries */
@@ -699,5 +702,10 @@ p {
   #parallax-world-of-ugg .block {
     padding: 30px 15px;
     width: 290px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h2 {
+    color: black;
   }
 }

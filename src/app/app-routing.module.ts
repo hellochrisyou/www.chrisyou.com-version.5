@@ -9,6 +9,7 @@ import { SkillComponent } from './skill/skill.component';
 import { BackgroundComponent } from './background/background.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
@@ -39,6 +40,10 @@ const routes: Routes = [
   {
     path: 'testimonial',
     component: TestimonialComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   },
   {
     path: 'previous-versions',

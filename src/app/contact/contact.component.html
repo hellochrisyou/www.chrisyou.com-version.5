@@ -1,4 +1,4 @@
-<div class="container" fxLayout="column" fxLayoutAlign="start center">
+<!-- <div class="container" fxLayout="column" fxLayoutAlign="start center">
     <div id="contact-title-column">
         <div class="shared-title" id="contact-title">
             <u><span class="chris animated bounceInUp delay-1s">CONTACT ME
@@ -15,7 +15,7 @@
                 </a>
             </div>
             <div class="social-icons-image">
-                <a href="https://www.facebook.com/hellochrisyou" style="color:#395795">
+                <a href="https://www.facebook.com/hellochrisyou" style="color:#395795">0
                     <i class="fa fa-facebook-square"></i>
                 </a>
             </div>
@@ -36,4 +36,82 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+<section fxLayout="row" fxLayoutAlign="center center">
+    <div class="cards">
+        <div [ngClass]="facebook ? 'active card' : 'card'" id="facebook">
+            <a (click)="activateFacebook()" class="card-toggle"><i><span class="fa fa-facebook"></span></i></a>
+            <div [ngClass]="facebookZ ? 'activeZ card-content' : 'inActiveZ card-content'">
+                <div class="row">
+                    <div class="left col">
+                        <h2>My <strong>Facebook</strong></h2>
+
+                        <p>Social media at its best! Add me as a friend and socially connect with what I am doing in my
+                            life right now.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div [ngClass]="github ? 'active card' : 'card'" id="github">
+            <a (click)="activateGithub()" class="card-toggle"><span class="fa fa-github"></span></a>
+            <div [ngClass]="githubZ ? 'activeZ card-content' : 'inActiveZ card-content'">
+                <div class="row">
+                    <div class="left col">
+                        <h2>My <strong>Github</strong></h2>
+
+                        <p>A code repository of my portfolio work. A version control using Git, you can fork or review
+                            my code online. Without a doubt, one of the most essential and useful tools I have ever
+                            worked with.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div [ngClass]="instagram ? 'active card' : 'card'" id="instagram">
+            <a (click)="activateInstagram()" class="card-toggle"><i class="fa fa-instagram" id="insta"
+                    aria-hidden="true"></i>
+            </a>
+            <div [ngClass]="instagramZ ? 'activeZ card-content' : 'inActiveZ card-content'">
+                <div class="row">
+                    <div class="left col">
+                        <h2>My <strong>Instagram</strong></h2>
+                        <p>Instagram inspires creativity around the world, helping over 1 billion people create and
+                            share. Explore my photos of what I enjoy doing the most.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div [ngClass]="linkedIn ? 'active card' : 'card'" id="linkedin">
+            <a (click)="activateLinkedIn()" class="card-toggle"><i><span class="fa fa-linkedin"></span></i></a>
+            <div [ngClass]="linkedInZ ? 'activeZ card-content' : 'inActiveZ card-content'">
+                <div class="row">
+                    <div class="left col">
+                        <h2>My <strong>LinkedIn</strong></h2>
+
+                        <p>Feel free to add me on Linkedin. It is a valuable resource for career and busienss
+                            professionals to network and obtain resources and support; and build relationships with
+                            potential customers, clients, and partners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div [ngClass]="twitter ? 'active card' : 'card'" id="twitter">
+            <a (click)="activateTwitter()" class="card-toggle"><i><span class="fa fa-twitter"></span></i></a>
+            <div [ngClass]="twitterZ ? 'activeZ card-content' : 'inActiveZ card-content'">
+                <div class="row">
+                    <div class="left col">
+                        <h2>My <strong>Twitter</strong></h2>
+
+                        <p>From breaking news and entertainment to sports and politics, from big events to everyday
+                            interests. If it's happening
+                            anywhere, it's happening on Twitter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
