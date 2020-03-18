@@ -17,6 +17,7 @@ import { RecordingComponent } from './recording/recording.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PrevVersionComponent } from './prev-version/prev-version.component';
 import { BackgroundComponent } from './background/background.component';
+import { BackgroundMobileComponent } from './background-mobile/background-mobile.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BackgroundComponent } from './background/background.component';
     SkillsComponent,
     ProjectComponent,
     PrevVersionComponent,
-    RecordingComponent
+    RecordingComponent,
+    BackgroundMobileComponent
   ],
   imports: [
     BrowserModule,

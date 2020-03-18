@@ -4,8 +4,16 @@ body {
   overflow: visible;
 }
 section {
-  border-bottom: var(--yellow-border-width) solid var(--yellow-color);
+  // border-bottom: var(--yellow-border-width) solid var(--yellow-color);
   background-color: white;
+}
+
+.chris {
+  margin-bottom: 5vw;
+}
+
+h2 {
+  color: black !important;
 }
 
 .testimony-column-sang {

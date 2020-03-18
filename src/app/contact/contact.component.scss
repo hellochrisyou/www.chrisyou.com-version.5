@@ -1,173 +1,3 @@
-// @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
-// .container {
-//   background-image: url("../../assets/img/bg/bg-contact.png");
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   border-right: var(--yellow-border-width) solid var(--yellow-color);
-//   margin: 0;
-//   min-width: 100%;
-//   height: 100vh;
-//   padding-top: 10vh;
-//   z-index: 1;
-//   background:
-//     /* top, transparent red, faked with gradient */ linear-gradient(
-//       rgba(0, 0, 0, 0.72),
-//       rgba(0, 0, 0, 0.72)
-//     ),
-//     /* bottom, image */ url("../../assets/img/bg/bg-contact.png");
-// }
-
-// i.fa {
-//   font-size: 64px;
-// }
-// #contact-title {
-//   color: white;
-// }
-
-// u {
-//   color: var(--yellow-color);
-// }
-// span.chris {
-//   color: white;
-// }
-// #contact-social-column {
-//   margin-top: 3vw;
-// }
-// .instagram {
-//   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-//   -webkit-background-clip: text;
-//   /* Also define standard property for compatibility */
-//   background-clip: text;
-//   -webkit-text-fill-color: transparent;
-// }
-
-// .social-icons {
-//   margin: 0 auto;
-//   /* You just need to change the width and height
-//   of your div here.
-//   The size of the images will adapt automatically.
-//   Make sure that the width is 5 times the height
-//   for better results.*/
-//   width: 640px;
-//   height: 128px;
-//   position: relative;
-// }
-
-// .social-icons .social-icons-image {
-//   display: inline-block;
-//   position: absolute;
-//   width: 33%;
-//   height: auto;
-//   z-index: 2;
-//   opacity: 1;
-//   transition: all 0.5s;
-//   padding: 2%;
-//   box-sizing: border-box;
-// }
-
-// .social-icons .social-icons-image a {
-//   display: inline-block;
-//   width: 100%;
-//   height: 100%;
-// }
-
-// .social-icons img {
-//   width: 100%;
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
-
-// .social-icons a:hover img {
-//   width: 110%;
-//   height: auto;
-//   margin: -5%;
-// }
-
-// .social-icons .social-icons-image:nth-child(1) {
-//   left: 23.75%; /*(nth-child(2).left - (50% * 20%)/4)*/
-//   top: 25%; /*((100%-50%)/2)*/
-//   z-index: 0;
-//   width: 10%; /*(50% * 20%)*/
-//   height: auto;
-//   opacity: 0.5;
-// }
-
-// .social-icons .social-icons-image:nth-child(2) {
-//   left: 31.25%; /*(40% - (75% * 20%)/4)*/
-//   top: 12.5%; /*((100%-75%)/2)*/
-//   z-index: 1;
-//   width: 15%; /*(75% * 20%)*/
-//   height: auto;
-//   opacity: 0.75;
-// }
-
-// .social-icons .social-icons-image:nth-child(3) {
-//   left: 40%;
-//   z-index: 2;
-//   width: 20%;
-//   height: auto;
-// }
-
-// .social-icons .social-icons-image:nth-child(4) {
-//   left: 48.75%;
-//   top: 12.5%;
-//   z-index: 1;
-//   width: 15%;
-//   height: auto;
-//   opacity: 0.75;
-// }
-
-// .social-icons .social-icons-image:nth-child(5) {
-//   left: 56.25%;
-//   top: 25%;
-//   z-index: 0;
-//   width: 10%;
-//   height: auto;
-//   opacity: 0.5;
-// }
-// @media only screen and (min-width: 700px) {
-//   .social-icons:hover .social-icons-image:nth-child(1) {
-//     top: 0px;
-//     left: 0%;
-//     width: 20%;
-//     opacity: 1;
-//   }
-
-//   .social-icons:hover .social-icons-image:nth-child(2) {
-//     top: 0px;
-//     left: 20%;
-//     width: 20%;
-//     opacity: 1;
-//   }
-
-//   .social-icons:hover .social-icons-image:nth-child(4) {
-//     top: 0px;
-//     left: 60%;
-//     width: 20%;
-//     opacity: 1;
-//   }
-
-//   .social-icons:hover .social-icons-image:nth-child(5) {
-//     top: 0px;
-//     left: 80%;
-//     width: 20%;
-//     opacity: 1;
-//   }
-// }
-// @media only screen and (max-width: 1200px) {
-//   #contact-title {
-//     font-size: 10vw;
-//   }
-//   img.cy-logo {
-//     height: 10vw;
-//     width: 10vw;
-//   }
-// }
-
-// New Css
 section {
   height: 100vh;
   width: 98vw;
@@ -259,6 +89,7 @@ p {
   transform: translate3d(0, 0, 0);
   opacity: 0;
   padding-left: 50px;
+  width: 50vw;
 }
 .cards .card.active .col {
   -webkit-transform: translate3d(0, 0, 0);
@@ -284,7 +115,7 @@ p {
   clip-path: circle(0% at 50px 88%);
 }
 .cards #facebook.active .card-content {
-  background: url("https://wallup.net/wp-content/uploads/2017/11/23/500424-minimalism-animals-birds.jpg");
+  background: url("../../assets/img/contact/contact-facebook.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-clip-path: circle(270% at 76px 88%);
@@ -295,7 +126,7 @@ p {
   clip-path: circle(0% at 150px 88%);
 }
 .cards #github.active .card-content {
-  background: url("https://i.imgur.com/LdcUOFc.png");
+  background: url("../../assets/img/contact/contact-github.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-clip-path: circle(270% at 150px 88%);
@@ -306,7 +137,7 @@ p {
   clip-path: circle(0% at 220px 88%);
 }
 .cards #linkedin.active .card-content {
-  background: url("https://s2.best-wallpaper.net/wallpaper/1920x1200/1107/Abstract-rainbow-background_1920x1200.jpg");
+  background: url("../../assets/img/contact/contact-linkedin.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-clip-path: circle(270% at 220px 88%);
@@ -317,7 +148,7 @@ p {
   clip-path: circle(0% at 292px 88%);
 }
 .cards #instagram.active .card-content {
-  background: url("https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  background: url("../../assets/img/contact/contact-instagram.png");
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-clip-path: circle(270% at 292px 88%);
@@ -328,7 +159,7 @@ p {
   clip-path: circle(0% at 292px 88%);
 }
 .cards #twitter.active .card-content {
-  background: url("https://cdn.pizap.com/pizapfiles/images/twitter_cover_maker_app01.jpg");
+  background: url("../../assets/img/contact/contact-twitter.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -368,4 +199,9 @@ span.fa-twitter {
 
 h1 {
   top: 10vh;
+}
+
+// Buttons
+.mat-button {
+  color: black;
 }

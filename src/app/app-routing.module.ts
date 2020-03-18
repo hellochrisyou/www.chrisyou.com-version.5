@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
+import { AboutComponent } from './about/about.component';
+import { BackgroundMobileComponent } from './background-mobile/background-mobile.component';
+import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PrevVersionComponent } from './prev-version/prev-version.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
-import { RecordingComponent } from './recording/recording.component';
 import { ProjectComponent } from './project/project.component';
-import { SkillComponent } from './skill/skill.component';
-import { BackgroundComponent } from './background/background.component';
-import { AboutComponent } from './about/about.component';
+import { RecordingComponent } from './recording/recording.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ContactComponent } from './contact/contact.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 
 const routes: Routes = [
@@ -22,8 +22,8 @@ const routes: Routes = [
     component: AboutComponent,
   },
   {
-    path: 'background',
-    component: BackgroundComponent,
+    path: 'background-mobile',
+    component: BackgroundMobileComponent,
   },
   {
     path: 'skills',
