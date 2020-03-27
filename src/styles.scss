@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Six+Caps);
-@import url(https://fonts.googleapis.com/css?family=Work+Sans);
-@import url(https://fonts.googleapis.com/css?family=Raleway&display=swap;);
+@import url("https://fonts.googleapis.com/css?family=Six + Caps");
+@import url("https://fonts.googleapis.com/css?family=Work + Sans");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 :root {
   --yellow-color: #ffd65e;
@@ -198,6 +198,11 @@ ul li {
 
 .align-center {
   padding-left: 0;
+}
+
+.title h1 {
+  font-size: 5.5rem;
+  letter-spacing: 8px;
 }
 
 .mat-tab-group.mat-primary .mat-ink-bar,

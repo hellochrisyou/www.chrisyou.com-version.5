@@ -35,6 +35,9 @@ u {
   color: var(--yellow-color);
 }
 @media only screen and (max-width: 1023px) {
+  h1 {
+    font-size: 3rem;
+  }
   iframe {
     width: 70vw;
   }
