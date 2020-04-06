@@ -83,6 +83,10 @@ p {
 p {
   font-family: "Source Sans Pro", sans-serif;
 }
+
+.mat-tab-body-content {
+  overflow: hidden !important;
+}
 @media only screen and (max-width: 719px) {
   mat-tab-group {
     margin-top: 4vw;
