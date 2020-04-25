@@ -1,5 +1,5 @@
 section {
-  background-image: url("../../assets/img/bg/bg-home.png");
+  background-image: url("../../assets/img/bg/home.jpeg");
   background-size: cover;
   background-position: center;
   border-left: var(--yellow-border-width) solid var(--yellow-color);
@@ -97,11 +97,9 @@ header:before {
   -webkit-animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
   animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))),
-    url("https://images.unsplash.com/photo-1468549940493-46152524296c?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=991&amp;h=761&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=")
-      no-repeat bottom;
+    url("../../assets/img/bg/home.jpeg") no-repeat bottom;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
-    url("https://images.unsplash.com/photo-1468549940493-46152524296c?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=991&amp;h=761&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=")
-      no-repeat bottom;
+    url("../../assets/img/bg/home.jpeg") no-repeat bottom;
   background-size: cover;
   content: "";
   opacity: 0;

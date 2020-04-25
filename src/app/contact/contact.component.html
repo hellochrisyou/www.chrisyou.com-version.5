@@ -8,7 +8,8 @@
     </div>
     <div class="cards">
         <div [ngClass]="facebook ? 'active card' : 'card'" id="facebook">
-            <a (click)="activateFacebook()" class="card-toggle"><i><span class="fa fa-facebook"></span></i></a>
+            <a (click)="activateFacebook()" class="card-toggle">
+                <i><span class="fa fa-facebook"></span></i></a>
             <div [ngClass]="facebookZ ? 'activeZ card-content' : 'inActiveZ card-content'">
                 <div class="row">
                     <div class="left col">
@@ -43,8 +44,8 @@
         </div>
 
         <div [ngClass]="instagram ? 'active card' : 'card'" id="instagram">
-            <a (click)="activateInstagram()" class="card-toggle"><i class="fa fa-instagram" id="insta"
-                    aria-hidden="true"></i>
+            <a (click)="activateInstagram()" class="card-toggle">
+                <i class="fa fa-instagram" id="insta" aria-hidden="true"></i>
             </a>
             <div [ngClass]="instagramZ ? 'activeZ card-content' : 'inActiveZ card-content'">
                 <div class="row">
@@ -60,7 +61,9 @@
             </div>
         </div>
         <div [ngClass]="linkedIn ? 'active card' : 'card'" id="linkedin">
-            <a (click)="activateLinkedIn()" class="card-toggle"><i><span class="fa fa-linkedin"></span></i></a>
+            <a (click)="activateLinkedIn()" class="card-toggle">
+                <i><span class="fa fa-linkedin"></span></i>
+            </a>
             <div [ngClass]="linkedInZ ? 'activeZ card-content' : 'inActiveZ card-content'">
                 <div class="row">
                     <div class="left col">
@@ -77,7 +80,9 @@
             </div>
         </div>
         <div [ngClass]="twitter ? 'active card' : 'card'" id="twitter">
-            <a (click)="activateTwitter()" class="card-toggle"><i><span class="fa fa-twitter"></span></i></a>
+            <a (click)="activateTwitter()" class="card-toggle">
+                <i><span class="fa fa-twitter"></span></i>
+            </a>
             <div [ngClass]="twitterZ ? 'activeZ card-content' : 'inActiveZ card-content'">
                 <div class="row">
                     <div class="left col">

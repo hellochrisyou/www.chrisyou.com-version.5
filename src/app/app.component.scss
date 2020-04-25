@@ -100,6 +100,11 @@ mat-toolbar {
   top: 24px;
 }
 
+span#toolbar-title {
+  margin-left: 25vw;
+  font-family: "Dancing Script", cursive;
+}
+
 .bar:before {
   top: -8px;
 }
@@ -268,5 +273,10 @@ a {
   }
   :host ::ng-deep .mat-tab-label {
     font-size: 1.5vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main {
+    min-height: initial;
   }
 }
