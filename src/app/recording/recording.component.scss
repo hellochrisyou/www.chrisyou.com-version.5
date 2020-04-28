@@ -2,6 +2,7 @@ section {
   background-color: transparent;
   position: relative;
   overflow: hidden;
+  height: 95vh;
 }
 
 // Recording
@@ -11,7 +12,7 @@ section {
 }
 
 #recording-container {
-  height: 100vh;
+  height: 94vh;
   background-image: url("../../assets/img/music-bg.jpg");
   background-color: transparent;
   background-repeat: no-repeat;

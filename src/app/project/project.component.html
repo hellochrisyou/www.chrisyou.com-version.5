@@ -1,117 +1,144 @@
-<mat-tab-group id="projectTabGroup" mat-align-tabs="center">
-    <mat-tab label="S3FS">
-        <mat-card class="mat-elevation-z4 animated bounceIn delay-0.75s">
-            <div class="ribbon">
-                <a href="https://github.com/hellochrisyou/S3FS-OpenSSL-RC4-MD5">Fork me on GitHub</a>
+<section id="project-section">
+    <mat-tab-group id="projectTabGroup" mat-align-tabs="center">
+        <mat-tab class="inner-tabs" label="Football">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+                <mat-card class="mat-elevation-z4 animated bounceIn delay-0.75s">
+                    <div class="ribbon">
+                        <a href="https://github.com/hellochrisyou/Fantasy-Football-V2-Client">Fork me on GitHub</a>
+                    </div>
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h1 class="display-3"><u>Fantasy Football</u></h1>
+                        </mat-card-title>
+                        <mat-card-subtitle>HTML/CSS, Typescript, Java, SQL</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image class="projectImg" mat-card-image src="../../assets/img/project/ff2.png">
+                    <div class="image-link">
+                        <a (click)="openDialog('football')" matTooltipPosition="above" matTooltip="Enlarge Photo">View
+                            Images</a>
+                    </div>
+                    <mat-card-content>
+                        <p>
+                            Server/Client multiplayer Fantasy Football Auction website. Live NFL API are used to
+                            retrieve
+                            auction statistics for the current NFL week. Authentication is managed by Auth0.
+                        </p>
+                        <br />
+
+                        <mat-chip-list fxLayout="row" fxLayoutAlign="center center">
+                            <mat-chip class="mat-elevation-z10">Angular 2+</mat-chip>
+                            <mat-chip class="mat-elevation-z10">Spring Boot</mat-chip>
+                            <mat-chip class="mat-elevation-z10">Firebase</mat-chip>
+                        </mat-chip-list>
+                    </mat-card-content>
+                </mat-card>
             </div>
-            <mat-card-header>
-                <mat-card-title>
-                    <h1 class="display-3"><u>S3FS</u></h1>
-                </mat-card-title>
-                <mat-card-subtitle>C, C++</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image class="projectImg" mat-card-image src="../../assets/img/project/s3.png">
-            <mat-card-content>
-                <p>
-                    A secure file system based on S3FS encryption algorithm with MD5 checksum (extrapolated and
-                    integrated
-                    from OpenSSL upon uploading and downloading to and from Amazon Web Services S3 bucket.
-                </p>
-                <br />
-                <p>
-                    <mat-chip-list fxLayout="row" fxLayoutAlign="center center">
-                        <mat-chip>AWS S3</mat-chip>
-                        <mat-chip>S3FS</mat-chip>
-                        <mat-chip>Linux</mat-chip>
-                        <mat-chip>VmWare</mat-chip>
-                    </mat-chip-list>
-                </p>
-            </mat-card-content>
-        </mat-card>
-    </mat-tab>
-    <mat-tab label="Fantasy Football">
-        <mat-card class="mat-elevation-z4 animated bounceIn delay-0.75s">
-            <div class="ribbon">
-                <a href="https://github.com/hellochrisyou/Fantasy-Football-V2-Client">Fork me on GitHub</a>
+        </mat-tab>
+        <mat-tab class="inner-tabs" label="Stocks">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+
+                <mat-card class="mat-elevation-z4 animated bounceIn delay-0.75s">
+                    <div class="ribbon">
+                        <a href="https://github.com/hellochrisyou/-Client-Stock-Web-App-Angular-Spring">Fork me on
+                            GitHub</a>
+                    </div>
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h1 class="display-3"><u>Stocks</u></h1>
+                        </mat-card-title>
+                        <mat-card-subtitle>HTML, CSS, </mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image class="projectImg" mat-card-image src="../../assets/img/project/stock1.png">
+                    <div class="image-link">
+                        <a (click)="openDialog('stocks')" matTooltipPosition="above" matTooltip="Enlarge Photo">View
+                            Images</a>
+                    </div>
+                    <mat-card-content>
+                        <p>
+                            A web application that allows you to search for stocks and keep a custom list. Keeps track
+                            of
+                            the
+                            history of stocks saved and searched.
+                        </p>
+                        <br />
+
+                        <mat-chip-list fxLayout="row" fxLayoutAlign="center center">
+                            <mat-chip class="mat-elevation-z10">Angular 2+</mat-chip>
+                            <mat-chip class="mat-elevation-z10">Spring Boot</mat-chip>
+                            <mat-chip class="mat-elevation-z10">Firebase</mat-chip>
+                        </mat-chip-list>
+                    </mat-card-content>
+                </mat-card>
             </div>
-            <mat-card-header>
-                <mat-card-title>
-                    <h1 class="display-3"><u>Fantasy Football</u></h1>
-                </mat-card-title>
-                <mat-card-subtitle>HTML/CSS, Typescript, Java, SQL</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image class="projectImg" mat-card-image src="../../assets/img/project/ff2.png">
-            <mat-card-content>
-                <p>
-                    Full-scale Server/Client multiplayer Fantasy Football website. Live NFL API are used to retrieve
-                    statistics for the current NFL week. Accounts are managed by Auth0 and API routes and tokens are
-                    authorized via backend
-                </p>
-                <br />
-
-                <mat-chip-list fxLayout="row" fxLayoutAlign="center center">
-                    <mat-chip>Angular 2+</mat-chip>
-                    <mat-chip>Spring Boot</mat-chip>
-                    <mat-chip>Firebase</mat-chip>
-                </mat-chip-list>
-            </mat-card-content>
-        </mat-card>
-    </mat-tab>
-    <mat-tab label="Stock">
-        <mat-card class="mat-elevation-z4 animated bounceIn delay-0.75s">
-            <div class="ribbon">
-                <a href="https://github.com/hellochrisyou/-Client-Stock-Web-App-Angular-Spring">Fork me on GitHub</a>
+        </mat-tab>
+        <mat-tab class="inner-tabs" label="Dating">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+                <mat-card class="mat-elevation-z4 animated bounceIn delay-0.5s">
+                    <div class="ribbon">
+                        <a href="https://github.com/hellochrisyou/Dating-App-Angular-Ionic">Fork me on GitHub</a>
+                    </div>
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h1 class="display-3"><u>Dating App</u></h1>
+                        </mat-card-title>
+                        <mat-card-subtitle>Typescript</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image class="projectImg" mat-card-image src="../../assets/img/project/dating1.png">
+                    <div class="image-link">
+                        <a (click)="openDialog('dating')" matTooltipPosition="above" matTooltip="Enlarge Photo">View
+                            Images</a>
+                    </div>
+                    <mat-card-content>
+                        <p>
+                            Dating native mobile app for users to message and propose dates with each other. User
+                            profiles
+                            include user details, photo (uploads), and more. Authentication and Data storage are kept on
+                            a
+                            Firebase Server.
+                        </p>
+                        <br />
+                        <mat-chip-list fxLayout="row" fxLayoutAlign="center center">
+                            <mat-chip class="mat-elevation-z10">Angular 2+</mat-chip>
+                            <mat-chip class="mat-elevation-z10">Firebase</mat-chip>
+                            <mat-chip class="mat-elevation-z10">Ionic</mat-chip>
+                        </mat-chip-list>
+                    </mat-card-content>
+                </mat-card>
             </div>
-            <mat-card-header>
-                <mat-card-title>
-                    <h1 class="display-3"><u>Stock</u></h1>
-                </mat-card-title>
-                <mat-card-subtitle>HTML, CSS, </mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image class="projectImg" mat-card-image src="../../assets/img/project/stock1.png">
-            <mat-card-content>
-                <p>
-                    A web application that allows you to search for stocks and keep a custom list. Keeps track of the
-                    history of stocks saved and searched.
-                </p>
-                <br />
-
-                <mat-chip-list fxLayout="row" fxLayoutAlign="center center">
-                    <mat-chip>Angular 2+</mat-chip>
-                    <mat-chip>Spring Boot</mat-chip>
-                    <mat-chip>Firebase</mat-chip>
-                </mat-chip-list>
-            </mat-card-content>
-        </mat-card>
-    </mat-tab>
-    <mat-tab label="Audit">
-        <mat-card class="mat-elevation-z4 animated bounceIn delay-0.5s">
-            <mat-card-header>
-                <mat-card-title>
-                    <h1 class="display-3"><u>eCase Audit Management</u></h1>
-                </mat-card-title>
-                <mat-card-subtitle>C#, SQL</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image class="projectImg" mat-card-image src="../../assets/img/project/audit.png">
-            <mat-card-content>
-                <p>
-                    Ecase auditing web application allows users to efficiently manage aspects of audits' lifecycle.
-                    From
-                    annual planning, to detailed risk assessment and controls testing, to action tracking and management
-                    reporting, Audit streamlines the usr's OIG audit processes for greater productivity. Developed
-                    at
-                    AINS inc.
-                </p>
-                <br />
-
-                <mat-chip-list fxLayout="row" fxLayoutAlign="center center">
-                    <mat-chip>Angular 2+</mat-chip>
-                    <mat-chip>ASP.NET</mat-chip>
-                    <mat-chip>Entity Framework</mat-chip>
-                    <mat-chip>Auth0</mat-chip>
-                </mat-chip-list>
-            </mat-card-content>
-        </mat-card>
-    </mat-tab>
-
-</mat-tab-group>
+        </mat-tab>
+        <mat-tab class="inner-tabs" label="S3FS">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+                <mat-card class="mat-elevation-z4 animated bounceIn delay-0.75s">
+                    <div class="ribbon">
+                        <a href="https://github.com/hellochrisyou/S3FS-OpenSSL-RC4-MD5">Fork me on GitHub</a>
+                    </div>
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h1 class="display-3"><u>S3FS</u></h1>
+                        </mat-card-title>
+                        <mat-card-subtitle>C, C++</mat-card-subtitle>
+                    </mat-card-header>
+                    <div fxLayout="row" fxLayoutAlign="center center">
+                        <img id="img-s3fs" mat-card-image class="projectImg" src="../../assets/img/project/s3.png">
+                    </div>
+                    <mat-card-content>
+                        <p>
+                            A secure file system based on S3FS encryption algorithm with MD5 checksum (extrapolated and
+                            integrated
+                            from OpenSSL upon uploading and downloading to and from Amazon Web Services S3 bucket.
+                        </p>
+                        <br />
+                        <p>
+                            <mat-chip-list fxLayout="row" fxLayoutAlign="center center">
+                                <mat-chip class="mat-elevation-z10">AWS S3</mat-chip>
+                                <mat-chip class="mat-elevation-z10">S3FS</mat-chip>
+                                <mat-chip class="mat-elevation-z10">Linux</mat-chip>
+                                <mat-chip class="mat-elevation-z10">VmWare</mat-chip>
+                            </mat-chip-list>
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</section>

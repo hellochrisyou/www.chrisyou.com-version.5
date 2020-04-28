@@ -1,7 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Six + Caps");
-@import url("https://fonts.googleapis.com/css?family=Work + Sans");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 :root {
@@ -32,8 +30,6 @@ body,
   margin: 0;
   padding: 0;
   font-family: "Fauna One", serif;
-
-  // font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
 /* Reset CSS */
@@ -172,9 +168,8 @@ hr {
 
 mat-card {
   color: whitesmoke !important;
-
-  background: linear-gradient(rgba(38, 38, 43, 0.85), rgba(38, 38, 43, 0.95)),
-    url("https://images.pexels.com/photos/70232/pexels-photo-70232.jpeg?h=350&auto=compress") !important;
+  background: rgb(2, 0, 36) !important;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(153, 0, 0, 1) 100%) !important;
   -webkit-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75) !important;
@@ -205,9 +200,16 @@ ul li {
   letter-spacing: 8px;
 }
 
+.mat-toolbar {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3) !important;
+}
+
 .mat-tab-group.mat-primary .mat-ink-bar,
 .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-  background-color: goldenrod;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(153, 149, 0, 1) 100%);
+  height: 4px;
+  margin-bottom: 1vh;
 }
 
 @media only screen and (max-width: 600px) {

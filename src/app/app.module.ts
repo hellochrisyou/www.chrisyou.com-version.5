@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackgroundMobileComponent } from './background-mobile/background-mobile.component';
@@ -18,12 +17,13 @@ import { ProjectComponent } from './project/project.component';
 import { RecordingComponent } from './recording/recording.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { ImageDialog } from './project/image-dialog/image-dialog';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ImageDialog,
     HomeComponent,
-    AboutComponent,
     BackgroundComponent,
     ContactComponent,
     TestimonialComponent,
@@ -44,7 +44,8 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ImageDialog]
 })
 
 export class AppModule { }

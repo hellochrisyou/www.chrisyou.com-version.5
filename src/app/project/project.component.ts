@@ -1,4 +1,9 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+
+import { ImageDialog } from './image-dialog/image-dialog';
+
+
 
 @Component({
   selector: 'app-project',
@@ -8,10 +13,20 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
 
   }
+
+  public openDialog(imageName: string): void {
+    const dialogRef = this.dialog.open(ImageDialog, {
+      width: '100vw',
+      data: { tab: imageName }
+    });
+  }
+
 
 }

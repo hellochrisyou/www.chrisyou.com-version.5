@@ -1,0 +1,14 @@
+img {
+    width: auto;
+    height: 80vh;
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .flex-layout {
+        height: 100vh;
+    }
+}

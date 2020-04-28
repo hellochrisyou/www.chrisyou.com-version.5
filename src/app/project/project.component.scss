@@ -1,3 +1,8 @@
+section#project-section {
+  background-image: url("../../assets/img/project/bg-project.jpg");
+  background-size: cover;
+  height: 95vh;
+}
 // Ribbon
 .ribbon {
   background-color: #a00;
@@ -36,25 +41,12 @@ a:hover {
 }
 // End Ribbon
 
-.mat-card-image.projectImg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25vw;
-}
-
-mat-card {
-  max-width: 550px;
-  margin: 2vw auto;
-}
-
 .mat-card-header {
   justify-content: center;
 }
+
 .mat-card-subtitle {
   justify-content: center;
-}
-.mat-card-center {
 }
 
 p {
@@ -87,13 +79,45 @@ p {
 .mat-tab-body-content {
   overflow: hidden !important;
 }
+
+.mat-tab-label.inner-tabs .mat-tab-label-content {
+  color: black;
+  font-weight: 800;
+}
+
+div.image-link,
+a {
+  color: blue;
+  text-align: center;
+  font-weight: 800;
+}
+a {
+  cursor: pointer;
+}
+.mat-tab-body-wrapper,
+.flex-wrapper {
+  height: 95vh;
+}
+mat-card {
+  width: 40%;
+  height: auto;
+}
+#img-s3fs {
+  width: 30vw;
+  margin: 0 auto;
+}
 @media only screen and (max-width: 719px) {
   mat-tab-group {
     margin-top: 4vw;
   }
+  mat-tabs .mat-tab-label {
+    width: 60px !important;
+  }
   mat-card {
-    max-width: 250px;
-    margin: 25vw auto;
+    width: 90%;
+    height: 65%;
+    max-width: 550px;
+    margin: 2vw auto;
   }
 }
 

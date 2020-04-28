@@ -1,11 +1,10 @@
-<mat-toolbar class="toolbar mat-elevation-z7" role="banner" fxHide fxShow.xs="true" fxShow.sm="true">
+<mat-toolbar class="toolbar" role="banner" fxHide fxShow.xs="true" fxShow.sm="true">
   <div id="left-spacer"></div>
   <div class="menu-collapsed">
     <div class="bar"></div>
     <nav>
       <ul>
         <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-        <li><a routerLink="/about-me" routerLinkActive="active">About me</a></li>
         <li><a routerLink="/background-mobile" routerLinkActive="active">Background</a></li>
         <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
         <li><a routerLink="/project" routerLinkActive="active">Projects</a></li>
@@ -24,84 +23,54 @@
 <main class="container" fxShow fxHide.xs="true" fxHide.sm="true">
   <header>
     <mat-tab-group id="header-tab" mat-align-tabs="center" animationDuration="1700ms">
-      <mat-tab label="Home">
-        <!-- <ng-template mat-tab-label>
-          <i class="fa fa-home tab-icon" aria-hidden="true"></i>
-          home
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Home
         </ng-template>
-        <ng-template matTabContent> -->
         <app-home></app-home>
-        <!-- </ng-template> -->
       </mat-tab>
-      <mat-tab label="About">
-        <!-- <ng-template mat-tab-label>
-          <i class="fa fa-id-card tab-icon" aria-hidden="true"></i>
-          About
-        </ng-template>
-        <ng-template matTabContent> -->
-        <app-about></app-about>
-        <!-- </ng-template> -->
-      </mat-tab>
-      <mat-tab label="Background">
-        <!-- <ng-template mat-tab-label>
-          <i class="fa fa-id-card tab-icon" aria-hidden="true"></i>
+      <mat-tab>
+        <ng-template mat-tab-label>
           Background
         </ng-template>
-        <ng-template matTabContent> -->
         <app-background></app-background>
-        <!-- </ng-template> -->
       </mat-tab>
-      <mat-tab label="Skills">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Skills
+        </ng-template>
         <skills></skills>
       </mat-tab>
-      <!-- <mat-tab label="Skills"> -->
-      <!-- <ng-template mat-tab-label>
-          <i class="fa fa-tasks tab-icon"></i>
-          Skills
-        </ng-template> -->
-      <!-- <ng-template matTabContent> -->
-      <!-- <app-skill></app-skill> -->
-      <!-- </ng-template> -->
-      <!-- </mat-tab> -->
-      <mat-tab label="Projects">
-        <!-- <ng-template mat-tab-label>
-          <i class="fa fa-sitemap tab-icon"></i>
+      <mat-tab>
+        <ng-template mat-tab-label>
           Projects
         </ng-template>
-        <ng-template matTabContent> -->
         <app-project></app-project>
-        <!-- </ng-template> -->
       </mat-tab>
-      <mat-tab label="Testimonials">
-        <!-- <ng-template mat-tab-label> <i class="fa fa-pencil tab-icon"></i> Testimonials </ng-template>
-        <ng-template matTabContent> -->
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Testimonials
+
+        </ng-template>
         <app-testimonial></app-testimonial>
-        <!-- </ng-template> -->
       </mat-tab>
-      <mat-tab label="Music">
-        <!-- <ng-template mat-tab-label>
-          <i class="fa fa-microphone tab-icon"></i>
+      <mat-tab>
+        <ng-template mat-tab-label>
           Recordings
         </ng-template>
-        <ng-template matTabContent> -->
         <app-recording></app-recording>
-        <!-- </ng-template> -->
       </mat-tab>
-      <mat-tab label="Contact">
-        <!-- <ng-template mat-tab-label>
-          <i class="fa fa-whatsapp tab-icon"></i>
+      <mat-tab>
+        <ng-template mat-tab-label>
           Contact
-        </ng-template> -->
+        </ng-template>
         <app-contact></app-contact>
-        <!-- </mat-tab> -->
       </mat-tab>
-      <mat-tab label="Versions">
-        <!-- <ng-template mat-tab-label>
-          <i class="fa fa-arrows-v tab-icon"></i>
+      <mat-tab>
+        <ng-template mat-tab-label>
           Previous Versions
-        </ng-template> -->
+        </ng-template>
         <app-prev-version></app-prev-version>
-        <!-- </mat-tab> -->
       </mat-tab>
     </mat-tab-group>
   </header>

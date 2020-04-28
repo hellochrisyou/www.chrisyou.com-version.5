@@ -5,6 +5,9 @@ section {
   border-left: var(--yellow-border-width) solid var(--yellow-color);
 }
 
+header {
+  height: 95vh !important;
+}
 #home-title {
   color: white;
   padding: 30vh 0 0 5vw;
@@ -344,7 +347,7 @@ p {
 
 @media only screen and (max-width: 767px) {
   #home-pic-me img {
-    bottom: 15vw;
+    bottom: 0;
   }
   .header-content {
     margin-top: 45vw;

@@ -1,39 +1,28 @@
-body {
-  height: 100%;
-  width: 100vw;
-  overflow: visible;
-}
 section {
-  // border-bottom: var(--yellow-border-width) solid var(--yellow-color);
-  background-color: white;
-}
-
-.chris {
-  margin-bottom: 5vw;
-}
-
-h2 {
-  color: black !important;
-}
-
-.testimony-column-sang {
-  margin-bottom: 10vh;
+  background-image: url("../../assets/img/testimonial/testimony-bg.jpg");
+  background-size: cover;
 }
 
 #testimonial-title {
-  // color: var(--dark-contrast);
   margin: calc(var(--yellow-border-width) / 2) auto 0;
   font-size: 5rem;
   line-height: 8rem;
 }
 
 #bottom-row {
-  padding: 0 calc(var(--yellow-border-width) / 2) 0;
+  padding: 0 5vw 0 5vw;
 }
 u {
   color: var(--yellow-color);
 }
-h1.chris {
+
+h2,
+h5,
+blockquote {
+  color: black;
+}
+
+h1 {
   color: var(--dark-contrast);
   font-size: 5rem;
 }
@@ -41,29 +30,23 @@ blockquote {
   margin: 0.5rem 0;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
-  font-weight: 0;
+  font-weight: 375;
+  padding: 1rem;
   font-style: italic;
+  font-size: 1.1rem;
   line-height: 1.82rem;
-
-  // font-size:
-  // font-weight:
-  // letter-spacing:
+  color: white;
 }
-
+.mat-card-title, .mat-card-subtitle {
+  padding: 0.5rem;
+}
 h5 {
   text-align: center;
   width: 100%;
-  color: gray;
   font-size: 1rem;
   font-weight: 450;
-  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0 1px #fff;
   line-height: 1.35rem;
-  // font-style:italic;
-  // font-size:
-  // font-weight
-  // letter-spacing:
 }
 
 h2 {
@@ -72,134 +55,149 @@ h2 {
   font-weight: bolder;
   font-family: "Oswald", sans-serif;
   text-align: center;
-
-  // letter-spacing:
 }
 
-.testimony-column {
-  z-index: 1;
-}
-
-div.img-container {
-  border-radius: 100%;
-  overflow: hidden;
-  position: relative;
-  height: 10rem;
-  width: 10rem;
-  z-index: 2;
-  margin: 1rem auto;
-}
-
-div.img-wrapper {
-  background-size: cover;
-  background-position: center center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
-  width: 100%;
-}
-
-div.img-wrapper img {
-  display: none !important;
-  max-width: 100%;
+img.img-testimony {
+  height: 25%;
+  width: 75%;
   vertical-align: middle;
-  z-index: 3;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+    0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  border: 5px solid whitesmoke;
+}
+
+.mat-card#mat-card-testimonial {
+  width: 400px;
+  height: 90%;
 }
 
 @media screen and (max-width: 600px) {
-  section {
-    overflow: visible;
-    border-bottom: none;
+  .mat-card#mat-card-testimonial {
+    width: 265px;
+    height: 75%;
   }
-  #testimonial-title {
-    font-size: 16vw;
-    line-height: 6rem;
+  blockquote {
+    font-size: 0.8rem;
   }
-  #bottom-row {
-    // height: 100%;
-    overflow: visible;
-    border: none;
+  #arrow_2 .arrow span { 
+    width: 4em !important;
   }
-  .shared-title {
-    margin: 1vw auto !important;
+  #arrow_2 .arrow.arrow--left:before {
+    right: 0 !important;
   }
-  div.testimony-column h2 {
-    margin: 0 auto;
-    font-size: 1.7rem;
+  #arrow_2 .arrow.arrow--right:before {
+    left: 0 !important;
   }
-  div.testimony-column div.img-container {
-    margin-bottom: 0.5rem;
-  }
+}
+.arrow-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
-@media only screen and (max-width: 599px) and (min-height: 700px) {
-  h2,
-  h5,
-  blockquote {
-    margin-top: 1vh;
-  }
-  div.testimony-column div.img-container {
-    margin-top: 15vh;
-  }
-  .testimony-column-sang {
-    margin-bottom: 26.5vh;
-  }
+.block {
+  width: 300px;
+  height: 100px;
+  background: #eee;
+  margin: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 
-@media screen and (min-width: 601px) {
-  h5,
-  blockquote {
-    font-size: 1rem;
-  }
+h1 {
+  color: #001432;
+  opacity: 0.4;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
-@media screen and (min-width: 1001px) {
-  h5,
-  blockquote {
-    font-size: 1vw;
-  }
-  h2 {
-    font-size: 2vw;
-  }
+
+.arrow-wrapper:hover h1 {
+  opacity: 1;
 }
-@media screen and (min-width: 1300px) and (max-height: 800px) {
-  h5,
-  blockquote {
-    font-size: 0.8vw;
-  }
-  h2 {
-    font-size: 1.7vw;
-  }
+
+.flex-container {
+  height: 95vh;
 }
-@media screen and (min-width: 1900px) and (min-height: 1000px) {
-  h5,
-  blockquote {
-    font-size: 1.35vw;
-    line-height: 1.8vw;
-  }
-  h2 {
-    font-size: 2.2vw;
-  }
+
+.mat-tab-group#mat-tab-testimonial.mat-primary .mat-ink-bar {
+  visibility: hidden !important;
 }
-@media screen and (min-width: 2000px) {
-  h5,
-  blockquote {
-    font-size: 1vw;
-    line-height: 2.25vw;
-  }
-  h2 {
-    font-size: 3.25vw;
-  }
-  .img-container {
-    height: 8vw !important;
-    width: 8vw !important;
-  }
+/***************
+ * Arrow 2
+ ***************/
+#arrow_2 .arrow {
+  color: black;
+  cursor: pointer;
+  display: block;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
-@media only screen and (max-width: 719px) {
-  h1 {
-    margin-top: 15vw;
-    font-size: 3rem;
-  }
+#arrow_2 .arrow span {
+  display: block;
+  width: 5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0s;
+  transition: opacity 0.3s 0s;
+  padding: 0 0.5em;
+}
+#arrow_2 .arrow:hover span {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0.1s;
+  transition: opacity 0.3s 0.1s;
+}
+#arrow_2 .arrow:before {
+  content: "";
+  display: block;
+  border: solid black;
+  border-width: 2px 2px 0 0;
+  position: absolute;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+}
+#arrow_2 .arrow.arrow--left:before {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  right: initial;
+  -webkit-transition: right 0.3s 0.2s;
+  transition: right 0.3s 0.2s;
+}
+#arrow_2 .arrow.arrow--left:hover:before {
+  right: 100%;
+  -webkit-transition: right 0.3s;
+  transition: right 0.3s;
+}
+#arrow_2 .arrow.arrow--right {
+  text-align: right;
+}
+#arrow_2 .arrow.arrow--right:before {
+  left: 4vw;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: left 0.3s 0.2s;
+  transition: left 0.3s 0.2s;
+}
+#arrow_2 .arrow.arrow--right:hover:before {
+  left: 100%;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
+}
+#arrow_2 .arrow:hover {
+  -webkit-transform: none;
+  transform: none;
 }

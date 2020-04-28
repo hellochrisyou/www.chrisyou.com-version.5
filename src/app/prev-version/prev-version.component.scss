@@ -301,7 +301,7 @@ div.block span {
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url("../../assets//img/version/parallax-version-1.jpg");
+  background-image: url("../../assets/img/version/parallax-version-1.jpg");
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
@@ -315,7 +315,7 @@ div.block span {
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url("../../assets//img/version/parallax-version-2.jpg");
+  background-image: url("../../assets/img/version/parallax-version-2.jpg");
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
@@ -330,6 +330,21 @@ div.block span {
   position: relative;
   width: 100%;
   background-image: url("../../assets/img/version/parallax-version-3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#parallax-world-of-ugg .parallax-four {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("../../assets/img/version/parallax-version-4.jpg");
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;

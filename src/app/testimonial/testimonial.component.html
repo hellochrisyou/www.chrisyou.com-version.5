@@ -1,66 +1,33 @@
-<section fxLayout="column" fxLayoutAlign="start stretch">
-    <div class="shared-title" id="testimonial-title">
-        <header>
-            <div class="title animated fadeInLeft delay-1s">
-                <h1>Testimonial</h1>
-            </div>
-        </header>
-        <hr />
-    </div>
-    <div id="bottom-row" fxLayout.gt-xs="row" fxLayout.lt-sm="column" fxLayoutAlign.gt-xs="space-between start"
-        fxLayoutAlign.lt-sm="center center" fxLayoutGap.gt-xs="2rem" fxFlex.gt-xs fxFlex.lt-sm fxLayoutGap.lt-sm="30vw">
-        <div class="testimony-column" fxFlex fxFlex.gt-xs="0 1 calc(33.3% - 32px)" fxLayout="column"
-            fxLayoutAlign="center center">
-            <div class="img-container mat-elevation-z18">
-                <!-- <i class="fas fa-home">Home</i> -->
-                <div class="img-wrapper"
-                    style="background-image: url('../../assets/img/testimonial/Testimony-Eric.png')">
-                    <img src="../../assets/img/testimonial/Testimony-Eric.png" />
-                </div>
-            </div>
-            <h2>ERIC BLAKEY</h2>
-            <h5>LG-Validations Engineer</h5>
-            <blockquote>
-                Chris You is organized, punctual, and goal-oriented. With that mindset, his collective talents make
-                him a
-                substantial addition to any team he joins.
-            </blockquote>
+<div class="flex-container" fxLayout="column" fxLayoutAlign="center center">
+    <div id="arrow_2" class="arrow-wrapper">
+        <div class="arrow arrow--left">
+            <span (click)="previousStep()">Prev</span>
         </div>
-        <div class="testimony-column" fxFlex.gt-xs="0 1 calc(33.3% - 32px)" fxLayout="column"
-            fxLayoutAlign="center center" fxFlex.lt-sm>
-            <div class="img-container mat-elevation-z18">
-                <!-- <i class="fas fa-home">Home</i> -->
-                <div class="img-wrapper"
-                    style="background-image: url('../../assets/img/testimonial/Testimony-Max.png')">
-                    <img src="../../assets/img/testimonial/Testimony-Max.png" />
+        <mat-tab-group id="mat-tab-testimonial" [selectedIndex]="selectedIndex">
+            <mat-tab disabled="true" *ngFor="let number of [0,1,2];let i=index; ">
+                <ng-template mat-tab-label>
+                </ng-template>
+                <div class="flex-container" fxLayout="column" fxLayoutAlign="center center">
+                    <mat-card id="mat-card-testimonial">
+                        <mat-card-header>
+                            <mat-card-title>{{testimonyTitles[selectedIndex]}}</mat-card-title>
+                            <mat-card-subtitle>{{testimonyJobs[selectedIndex]}}</mat-card-subtitle>
+                        </mat-card-header>
+                        <div fxLayout="row" fxLayoutAlign="center center">
+                            <img mat-card-image class="img-testimony" [src]="testimonyImages[selectedIndex]" />
+                        </div>
+                        <mat-card-content>
+                            <blockquote>
+                                {{testimonyText[selectedIndex]}}
+                            </blockquote>
+                        </mat-card-content>
+                    </mat-card>
                 </div>
-            </div>
-            <h2>MAX BRINEGAR</h2>
-            <h5>Microsoft- Software Engineer</h5>
-            <blockquote>
-                Watching Chris grow as a programmer while we worked together at AINS has been very inspiring. His
-                curiosity is
-                one notable chacteristic that will go a long way in the IT field. I feel very privileged to have
-                been his
-                mentor.
-            </blockquote>
-        </div>
-        <div class="testimony-column-sang" fxFlex.gt-xs="0 1 calc(33.3% - 32px)" fxLayout="column"
-            fxLayoutAlign="center center" fxFlex.lt-sm>
-            <div class="img-container mat-elevation-z18">
-                <!-- <i class="fas fa-home">Home</i> -->
-                <div class="img-wrapper"
-                    style="background-image: url('../../assets/img/testimonial/Testimony-Sang.png')">
-                    <img src="../../assets/img/testimonial/Testimony-Sang.png" />
-                </div>
-            </div>
-            <h2>SANG CHO</h2>
-            <h5>AINS-Full Stack Developer</h5>
-            <blockquote>
-                It is very easy to quickly feel comfortable working with Chris' charming personality. He is very
-                driven and is
-                always curious to find an answer. His quench for success is his greatest strength.
-            </blockquote>
+            </mat-tab>
+        </mat-tab-group>
+
+        <div class="arrow arrow--right">
+            <span (click)="nextStep()">Next</span>
         </div>
     </div>
-</section>
+</div>
