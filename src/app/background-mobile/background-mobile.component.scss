@@ -138,7 +138,7 @@ img {
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url("../../assets/img/education/code1.jpg");
+  background-image: url("../../assets/img/education/education-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
@@ -235,9 +235,17 @@ p {
   text-align: justify;
 }
 
+section#upper-section {
+  margin-top: 20vh;
+}
+
 p.pLeftMargin {
   padding-left: 3em;
 }
+
+ .background-date p {
+   text-align: center;
+ }
 
 /* Extras */
 /**************************/

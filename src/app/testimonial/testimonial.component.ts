@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { TESTIMONYIMAGES, TESTIMONYTITLES, TESTIMONYJOBS, TESTIMONYTEXT } from './testimonial-data';
+import { TESTIMONYIMAGES, TESTIMONYTITLES, TESTIMONYJOBS, TESTIMONYTEXT, TESTIMONYCOMPANY } from './testimonial-data';
 
 @Component({
   selector: 'app-testimonial',
@@ -10,6 +10,7 @@ import { TESTIMONYIMAGES, TESTIMONYTITLES, TESTIMONYJOBS, TESTIMONYTEXT } from '
 export class TestimonialComponent implements OnInit {
 
   testimonyImages = TESTIMONYIMAGES;
+  testimonyCompany = TESTIMONYCOMPANY;
   testimonyTitles = TESTIMONYTITLES;
   testimonyJobs = TESTIMONYJOBS;
   testimonyText = TESTIMONYTEXT;

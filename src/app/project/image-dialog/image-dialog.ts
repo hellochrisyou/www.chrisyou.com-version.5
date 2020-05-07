@@ -10,6 +10,9 @@ import { DATINGTABS, FOOTBALLTABS, STOCKTABS, FOOTBALLIMAGES, STOCKIMAGES, DATIN
 })
 // tslint:disable-next-line: component-class-suffix
 export class ImageDialog {
+
+    selectedIndex: number = 0;
+
     footballTabs = FOOTBALLTABS;
     stockTabs = STOCKTABS;
     datingTabs = DATINGTABS;
@@ -20,11 +23,10 @@ export class ImageDialog {
 
     thisTabs: string[] = [];
     thisImages: string[] = [];
-    thisImageUrl = '../../assets/img/project/';
     constructor(
         public dialogRef: MatDialogRef<ImageDialog>,
         @Inject(MAT_DIALOG_DATA) public data: DialogData) {
-        console.log(data.tab);
+        dialogRef.disableClose = false;
         switch (data.tab) {
             case 'football': {
                 this.thisTabs = this.footballTabs;
@@ -42,6 +44,20 @@ export class ImageDialog {
                 break;
             }
         }
+    }
+
+    nextStep() {
+        if (this.selectedIndex !== this.thisTabs.length - 1) {
+            this.selectedIndex = this.selectedIndex + 1;
+        }
+        console.log(this.selectedIndex);
+    }
+
+    previousStep() {
+        if (this.selectedIndex != 0) {
+            this.selectedIndex = this.selectedIndex - 1;
+        }
+        console.log(this.selectedIndex);
     }
 
     onNoClick(): void {

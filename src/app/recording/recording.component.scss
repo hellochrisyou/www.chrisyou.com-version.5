@@ -28,13 +28,15 @@ iframe {
   margin: calc(var(--yellow-border-width) / 2) auto 0;
 }
 
-h1.chris {
-  font-size: 5rem;
-  color: black;
-}
 u {
   color: var(--yellow-color);
 }
+
+div h1 {
+  margin: 5vw 0 5vw;
+  font-family: 'Oswald', sans-serif !important;
+}
+
 @media only screen and (max-width: 1023px) {
   h1 {
     font-size: 3rem;

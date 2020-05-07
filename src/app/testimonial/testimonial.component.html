@@ -1,4 +1,7 @@
-<div class="flex-container" fxLayout="column" fxLayoutAlign="center center">
+<div class="flex-container-testimonial" fxLayout="column" fxLayoutAlign="center center">
+    <div class="title animated bounceInRight delay-1s">
+        <h1>Testimonial</h1>
+    </div>
     <div id="arrow_2" class="arrow-wrapper">
         <div class="arrow arrow--left">
             <span (click)="previousStep()">Prev</span>
@@ -8,20 +11,19 @@
                 <ng-template mat-tab-label>
                 </ng-template>
                 <div class="flex-container" fxLayout="column" fxLayoutAlign="center center">
-                    <mat-card id="mat-card-testimonial">
-                        <mat-card-header>
-                            <mat-card-title>{{testimonyTitles[selectedIndex]}}</mat-card-title>
-                            <mat-card-subtitle>{{testimonyJobs[selectedIndex]}}</mat-card-subtitle>
-                        </mat-card-header>
-                        <div fxLayout="row" fxLayoutAlign="center center">
-                            <img mat-card-image class="img-testimony" [src]="testimonyImages[selectedIndex]" />
+                    <div id="flex-card">
+                        <blockquote>
+                            {{testimonyText[selectedIndex] | spaceAfterPeriod}}
+                        </blockquote>
+                        <div fxLayout="row" fxLayoutAlign="center end">
+                            <img fxFlex class="img-testimony" [src]="testimonyImages[selectedIndex]" />
+                            <div fxFlex>
+                                <h2>{{testimonyTitles[selectedIndex]}}</h2>
+                                <h5>{{testimonyCompany[selectedIndex]}}</h5>
+                                <h5>{{testimonyJobs[selectedIndex]}}</h5>
+                            </div>
                         </div>
-                        <mat-card-content>
-                            <blockquote>
-                                {{testimonyText[selectedIndex]}}
-                            </blockquote>
-                        </mat-card-content>
-                    </mat-card>
+                    </div>
                 </div>
             </mat-tab>
         </mat-tab-group>

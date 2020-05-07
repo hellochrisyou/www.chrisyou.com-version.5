@@ -5,9 +5,6 @@ section {
   border-left: var(--yellow-border-width) solid var(--yellow-color);
 }
 
-header {
-  height: 95vh !important;
-}
 #home-title {
   color: white;
   padding: 30vh 0 0 5vw;
@@ -75,6 +72,9 @@ span.chris {
   }
   section {
     border-left: none;
+  }
+  header h1.header-title {
+    font-size: 2.5rem;
   }
 }
 

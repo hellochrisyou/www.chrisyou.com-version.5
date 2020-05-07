@@ -18,6 +18,7 @@ import { RecordingComponent } from './recording/recording.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ImageDialog } from './project/image-dialog/image-dialog';
+import { SpaceAfterPeriodPipe } from './testimonial/shared.pipe';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ImageDialog } from './project/image-dialog/image-dialog';
     ProjectComponent,
     PrevVersionComponent,
     RecordingComponent,
-    BackgroundMobileComponent
+    BackgroundMobileComponent,
+    SpaceAfterPeriodPipe
   ],
   imports: [
     BrowserModule,

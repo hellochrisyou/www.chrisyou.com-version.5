@@ -1,7 +1,4 @@
-section {
-  background-image: url("../../assets/img/testimonial/testimony-bg.jpg");
-  background-size: cover;
-}
+
 
 #testimonial-title {
   margin: calc(var(--yellow-border-width) / 2) auto 0;
@@ -12,30 +9,24 @@ section {
 #bottom-row {
   padding: 0 5vw 0 5vw;
 }
-u {
-  color: var(--yellow-color);
-}
+
 
 h2,
 h5,
 blockquote {
   color: black;
+  text-align: center;
 }
 
-h1 {
-  color: var(--dark-contrast);
-  font-size: 5rem;
-}
 blockquote {
   margin: 0.5rem 0;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
-  font-weight: 375;
-  padding: 1rem;
+  font-weight: 200;
+  padding: 1.2rem;
   font-style: italic;
-  font-size: 1.1rem;
-  line-height: 1.82rem;
-  color: white;
+  font-size: 1.2vw;
+  line-height: 2rem;
 }
 .mat-card-title, .mat-card-subtitle {
   padding: 0.5rem;
@@ -43,7 +34,7 @@ blockquote {
 h5 {
   text-align: center;
   width: 100%;
-  font-size: 1rem;
+  font-size: 2rem; 
   font-weight: 450;
   text-transform: uppercase;
   line-height: 1.35rem;
@@ -58,8 +49,7 @@ h2 {
 }
 
 img.img-testimony {
-  height: 25%;
-  width: 75%;
+  width: 20%;
   vertical-align: middle;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
     0 8px 10px -5px rgba(0, 0, 0, 0.3);
@@ -68,18 +58,73 @@ img.img-testimony {
   border: 5px solid whitesmoke;
 }
 
-.mat-card#mat-card-testimonial {
-  width: 400px;
-  height: 90%;
+.flex-container-testimonial {
+  background-image: url('../../assets/img/testimonial/testimony-bg.jpg');
+  background-size: cover;
+  height: 95vh;
 }
 
+.mat-card#mat-card-testimonial {
+  width: 400px;
+  height: 75%;
+  background: rgb(255,255,255) !important;
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(7,7,8,1) 0%, rgba(34,36,49,1) 0%, rgba(36,40,68,1) 0%, rgba(0,16,153,1) 100%) !important;
+}
+@media screen and (min-width: 1024px) {
+  img.img-testimony {
+    width: 55%
+  }
+  blockquote {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  img.img-testimony {
+    width: 45%;
+  }
+  blockquote {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  img.img-testimony {
+    width: 70%
+  }
+  blockquote {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 601px) {
+div#flex-card {
+  width: 50vw;
+}
+}
 @media screen and (max-width: 600px) {
   .mat-card#mat-card-testimonial {
     width: 265px;
     height: 75%;
   }
   blockquote {
-    font-size: 0.8rem;
+    font-size: 0.68rem;
+  }
+  .title h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1rem !important;
+  } 
+  .mat-tab-group {
+    width: 100%;
+  }
+  h5 {
+    font-size: 0.6rem !important;
+  }
+  div#flex-card {
+    width: 100%;
+  }
+  .arrow-wrapper {
+    width: 90vw;
   }
   #arrow_2 .arrow span { 
     width: 4em !important;
@@ -111,25 +156,23 @@ img.img-testimony {
   justify-content: center;
 }
 
-h1 {
-  color: #001432;
-  opacity: 0.4;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
 .arrow-wrapper:hover h1 {
   opacity: 1;
 }
 
-.flex-container {
-  height: 95vh;
+div h1 {
+  margin: 5vw 0 5vw;
+  font-family: 'Oswald', sans-serif !important;
 }
 
 .mat-tab-group#mat-tab-testimonial.mat-primary .mat-ink-bar {
   visibility: hidden !important;
+}
+
+
+
+h2, h6 {
+  display: block;
 }
 /***************
  * Arrow 2

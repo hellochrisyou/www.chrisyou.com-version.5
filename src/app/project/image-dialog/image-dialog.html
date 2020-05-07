@@ -1,7 +1,20 @@
-<mat-tab-group mat-align-tabs="center">
-    <mat-tab *ngFor="let tab of thisTabs; let index = index" [label]="tab">
-        <div class="flex-layout" fxLayout="row" fxLayoutAlign="center center">
-            <img [src]="thisImages[index]">
+<div class="flex-container-image" fxLayout="column" fxLayoutAlign="start center">
+    <div id="arrow_2" class="arrow-wrapper">
+        <div class="arrow arrow--left">
+            <span (click)="previousStep()">-</span>
         </div>
-    </mat-tab>
-</mat-tab-group>
+        <mat-tab-group id="mat-tab-testimonial" [selectedIndex]="selectedIndex">
+            <mat-tab disabled="true" *ngFor="let number of thisTabs;let i=index; ">
+                <ng-template mat-tab-label>
+                </ng-template>
+                <div class="flex-container" fxLayout="column" fxLayoutAlign="center start">
+                    <img [src]="thisImages[i]">
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+
+        <div class="arrow arrow--right">
+            <span (click)="nextStep()">+</span>
+        </div>
+    </div>
+</div>

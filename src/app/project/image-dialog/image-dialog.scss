@@ -1,14 +1,130 @@
 img {
-    width: auto;
-    height: 80vh;
+    width: 100%;
+    height: 100vh;
 }
 
+.arrow-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.block {
+  width: 300px;
+  height: 100px;
+  background: #eee;
+  margin: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #001432;
+  opacity: 0.4;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.arrow-wrapper:hover h1 {
+  opacity: 1;
+}
+
+.flex-container-image {
+  height: 95vh;
+}
+
+.mat-tab-group#mat-tab-testimonial.mat-primary .mat-ink-bar {
+  visibility: hidden !important;
+}
+/***************
+ * Arrow 2
+ ***************/
+#arrow_2 .arrow {
+  color: black;
+  cursor: pointer;
+  display: block;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+#arrow_2 .arrow span {
+  display: block;
+  width: 5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0s;
+  transition: opacity 0.3s 0s;
+  padding: 0 0.5em;
+}
+#arrow_2 .arrow:hover span {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0.1s;
+  transition: opacity 0.3s 0.1s;
+}
+#arrow_2 .arrow:before {
+  content: "";
+  display: block;
+  border: solid black;
+  border-width: 2px 2px 0 0;
+  position: absolute;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+}
+#arrow_2 .arrow.arrow--left:before {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  right: initial;
+  -webkit-transition: right 0.3s 0.2s;
+  transition: right 0.3s 0.2s;
+}
+#arrow_2 .arrow.arrow--left:hover:before {
+  right: 100%;
+  -webkit-transition: right 0.3s;
+  transition: right 0.3s;
+}
+#arrow_2 .arrow.arrow--right {
+  text-align: right;
+}
+#arrow_2 .arrow.arrow--right:before {
+  left: 4vw;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: left 0.3s 0.2s;
+  transition: left 0.3s 0.2s;
+}
+#arrow_2 .arrow.arrow--right:hover:before {
+  left: 100%;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
+}
+#arrow_2 .arrow:hover {
+  -webkit-transform: none;
+  transform: none;
+}
+
+
 @media screen and (max-width: 600px) {
-    img {
+    img {   
         width: 100%;
         height: auto;
     }
     .flex-layout {
         height: 100vh;
+    }
+    .arrow-wrapper {
+        position: fixed;
+        top: 0;
     }
 }
