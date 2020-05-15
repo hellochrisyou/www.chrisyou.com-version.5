@@ -203,7 +203,7 @@ ul li {
 h1 {
   color: black;
   opacity: 0.4;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   text-transform: uppercase;
   -webkit-transition: opacity 0.3s;
@@ -216,18 +216,18 @@ h1 {
 
 .mat-tab-group.mat-primary .mat-ink-bar,
 .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(153, 149, 0, 1) 100%);
+  background-color: #fed55b;
   height: 4px;
   margin-bottom: 1vh;
 }
-div.background-body, div.background-date {
+div.background-body,
+div.background-date {
   width: 50vw;
   margin: 0 auto;
 }
 
 h2.version-title {
-  color: black !important;
+  color: whitesmoke;
 }
 
 @media only screen and (max-width: 600px) {
@@ -239,9 +239,10 @@ h2.version-title {
   hr {
     height: 0.5rem;
   }
-  div.background-body, div.background-date {
-  width: 75vw;
-  margin: 0 auto;
-  text-align: center;
-}
+  div.background-body,
+  div.background-date {
+    width: 75vw;
+    margin: 0 auto;
+    text-align: center;
+  }
 }

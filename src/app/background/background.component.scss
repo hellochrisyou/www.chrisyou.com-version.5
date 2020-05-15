@@ -5,7 +5,9 @@
 div.block span {
   font-style: italic;
 }
-
+.section-body {
+  height: 50vh;
+}
 /* Override UGG site */
 #main {
   width: 100%;
@@ -229,7 +231,6 @@ p {
 p.pLeftMargin {
   padding-left: 3em;
 }
-
 
 /* Extras */
 /**************************/
