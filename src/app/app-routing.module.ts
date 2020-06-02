@@ -8,7 +8,6 @@ import { PrevVersionComponent } from './prev-version/prev-version.component';
 import { ProjectComponent } from './project/project.component';
 import { RecordingComponent } from './recording/recording.component';
 import { SkillsComponent } from './skills/skills.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
 
 
 const routes: Routes = [
@@ -31,10 +30,6 @@ const routes: Routes = [
   {
     path: 'recording',
     component: RecordingComponent,
-  },
-  {
-    path: 'testimonial',
-    component: TestimonialComponent,
   },
   {
     path: 'contact',

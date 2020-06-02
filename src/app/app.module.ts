@@ -16,9 +16,7 @@ import { PrevVersionComponent } from './prev-version/prev-version.component';
 import { ProjectComponent } from './project/project.component';
 import { RecordingComponent } from './recording/recording.component';
 import { SkillsComponent } from './skills/skills.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ImageDialog } from './project/image-dialog/image-dialog';
-import { SpaceAfterPeriodPipe } from './testimonial/shared.pipe';
 
 @NgModule({
   declarations: [
@@ -27,13 +25,11 @@ import { SpaceAfterPeriodPipe } from './testimonial/shared.pipe';
     HomeComponent,
     BackgroundComponent,
     ContactComponent,
-    TestimonialComponent,
     SkillsComponent,
     ProjectComponent,
     PrevVersionComponent,
     RecordingComponent,
     BackgroundMobileComponent,
-    SpaceAfterPeriodPipe
   ],
   imports: [
     BrowserModule,
