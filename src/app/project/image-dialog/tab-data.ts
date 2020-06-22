@@ -9,13 +9,11 @@ export const FOOTBALLIMAGES: string[] = [
 export const STOCKIMAGES: string[] = [
     '../../assets/img/project/stock1.png',
     '../../assets/img/project/stock2.png',
-    '../../assets/img/project/stock-diagram.png'
 ];
 export const DATINGIMAGES: string[] = [
     '../../assets/img/project/dating1.png',
     '../../assets/img/project/dating2.png',
     '../../assets/img/project/dating3.png',
-    '../../assets/img/project/dating-diagram.png'
 ];
 
 export const FOOTBALLTABS: string[] = [
@@ -23,11 +21,11 @@ export const FOOTBALLTABS: string[] = [
 ];
 
 export const STOCKTABS: string[] = [
-    '1', '2', 'Diagram'
+    '1', '2'
 ];
 
 export const DATINGTABS: string[] = [
-    '1', '2', '3', 'Diagram'
+    '1', '2', '3'
 ];
 
 export interface DialogData {

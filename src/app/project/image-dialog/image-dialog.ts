@@ -11,7 +11,7 @@ import { DATINGTABS, FOOTBALLTABS, STOCKTABS, FOOTBALLIMAGES, STOCKIMAGES, DATIN
 // tslint:disable-next-line: component-class-suffix
 export class ImageDialog {
 
-    selectedIndex: number = 0;
+    selectedIndex = 0;
 
     footballTabs = FOOTBALLTABS;
     stockTabs = STOCKTABS;
