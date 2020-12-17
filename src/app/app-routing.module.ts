@@ -1,3 +1,4 @@
+import { BackgroundComponent } from './background/background.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -14,37 +15,49 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+    data: { state: 'home' }
+  },
+  {
+    path: 'background',
+    component: BackgroundComponent,
+    data: { state: 'background' }
   },
   {
     path: 'background-mobile',
     component: BackgroundMobileComponent,
+    data: { state: 'background-mobile' }
   },
   {
     path: 'skills',
     component: SkillsComponent,
+    data: { state: 'skills' }
   },
   {
     path: 'project',
     component: ProjectComponent,
+    data: { state: 'project' }
   },
   {
     path: 'recording',
     component: RecordingComponent,
+    data: { state: 'recording' }
   },
   {
     path: 'contact',
     component: ContactComponent,
+    data: { state: 'contact' }
   },
   {
     path: 'previous-versions',
     component: PrevVersionComponent,
+    data: { state: 'previous-versions' }
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home', }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

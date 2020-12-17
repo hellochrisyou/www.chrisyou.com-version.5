@@ -2,7 +2,6 @@ section {
   background-image: url("../../assets/img/bg/home.jpeg");
   background-size: cover;
   background-position: center;
-  border-left: var(--yellow-border-width) solid var(--yellow-color);
 }
 
 #home-title {
@@ -349,9 +348,9 @@ p {
   #home-pic-me img {
     bottom: 0;
   }
-  .header-content {
-    margin-top: 45vw;
-  }
+  // .header-content {
+  //   margin-top: 45vw;
+  // }
 }
 @media only screen and (min-width: 768px) {
   // header:after {

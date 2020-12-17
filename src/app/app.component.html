@@ -1,68 +1,27 @@
-<mat-toolbar class="toolbar" role="banner" fxHide fxShow.xs="true" fxShow.sm="true">
-  <div id="left-spacer"></div>
-  <div class="menu-collapsed">
-    <div class="bar"></div>
-    <nav>
-      <ul>
-        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-        <li><a routerLink="/background-mobile" routerLinkActive="active">Background</a></li>
-        <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
-        <li><a routerLink="/project" routerLinkActive="active">Projects</a></li>
-        <li><a routerLink="/recording" routerLinkActive="active">Recordings</a></li>
-        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-        <li><a routerLink="/previous-versions" routerLinkActive="active">Previous Versions</a></li>
-      </ul>
+<body class="welcome">
+  <span id="splash-overlay" class="splash"></span>
+  <span id="welcome" class="z-depth-4"></span>
+
+  <header class="navbar-fixed">
+    <nav class="row deep-purple darken-3 stroke">
+      <div class="col s12">
+        <ul>
+          <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/background" routerLinkActive="active">Background</a></li>
+          <!-- <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li> -->
+          <li><a routerLink="/project" routerLinkActive="active">Projects</a></li>
+          <li><a routerLink="/recording" routerLinkActive="active">Recordings</a></li>
+          <!-- <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li> -->
+          <li><a routerLink="/previous-versions" routerLinkActive="active">Versions</a></li>
+        </ul>
+      </div>
     </nav>
-  </div>
-  <span id="toolbar-title">Chris You's Website</span>
-</mat-toolbar>
-<main fxHide fxShow.xs="true">
-  <router-outlet></router-outlet>
-</main>
-<main class="container" fxShow fxHide.xs="true" fxHide.sm="true">
-  <header>
-    <mat-tab-group id="header-tab" mat-align-tabs="center" animationDuration="1700ms">
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Home
-        </ng-template>
-        <app-home></app-home>
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Background
-        </ng-template>
-        <app-background></app-background>
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Skills
-        </ng-template>
-        <skills></skills>
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Projects
-        </ng-template>
-        <app-project></app-project>
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Recordings
-        </ng-template>
-        <app-recording></app-recording>
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Contact
-        </ng-template>
-        <app-contact></app-contact>
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Previous Versions
-        </ng-template>
-        <app-prev-version></app-prev-version>
-      </mat-tab>
-    </mat-tab-group>
   </header>
+  <main class="valign-wrapper">
+    <span class="container grey-text text-lighten-1 ">
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </span>
+  </main>
+</body>

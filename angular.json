@@ -133,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "final-version-website"
+  "defaultProject": "final-version-website",
+  "cli": {
+    "analytics": "57d22dad-1699-4078-8e4e-4c52555b9ff5"
+  }
 }

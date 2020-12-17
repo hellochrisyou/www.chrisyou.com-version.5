@@ -1,7 +1,8 @@
 section {
   background-color: transparent;
-  position: relative;
+  position: absolute;
   overflow: hidden;
+  top: 7vh;
   height: 95vh;
 }
 
@@ -44,4 +45,5 @@ div h1 {
   iframe {
     width: 70vw;
   }
+  section { top: 0 };
 }
