@@ -1,6 +1,8 @@
 
 span.container {
   min-width: 100vw;
+  top: 0;
+  height: 100%;
 }
 
 
@@ -82,9 +84,16 @@ nav.fill ul li a:hover:after {
   opacity: 0
 }
 
+.row {
+  background-color: #fed559;
+}
+
+li a {
+  color: black !important;
+}
+
 main {
   width: 100vw;
-  height: 100%;
 }
 
 nav ul {
@@ -301,6 +310,7 @@ a {
 
 main {
   flex: 1 0 auto;
+  height: 100%;
 }
 
 h1.title,
@@ -313,7 +323,7 @@ h1.title,
 /* start welcome animation */
 
 body.welcome {
-  background: #4527a0;
+  background: transparent;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -321,8 +331,9 @@ body.welcome {
 .welcome .splash {
   height: 0px;
   padding: 0px;
-  border: 130em solid #039be5;
+  border: 130em solid white;
   position: fixed;
+  background-color: transparent;
   left: 50%;
   top: 100%;
   display: block;
@@ -335,7 +346,7 @@ body.welcome {
 }
 
 .welcome #welcome {
-  background: #311b92 ;
+  background: #fed559 ;
   width: 56px;
   height: 56px;
   position: absolute;
@@ -404,7 +415,7 @@ body.welcome {
 
 @keyframes moveUp {
   0% {
-    background: #311b92;
+    background: #fed559;
     top: 100%;
   }
   50% {
@@ -412,20 +423,20 @@ body.welcome {
   }
   100% {
     top: 50%;
-    background: #039be5;
+    background: #fed559;
   }
 }
 
 @keyframes materia {
   0% {
-    background: #039be5;
+    background: #fed559;
   }
   50% {
-    background: #039be5;
+    background: #fed559;
     top: 26px;
   }
   100% {
-    background: #311b92;
+    background: #fed559;
     width: 100%;
     height: 64px;
     border-radius: 0px;
@@ -515,6 +526,8 @@ body.welcome {
     min-height: initial;
   }
   ul li a {
-    font-size: 0.375em;
+    font-size: 0.65em;  }
+  nav {
+    height: 44px;
   }
 }

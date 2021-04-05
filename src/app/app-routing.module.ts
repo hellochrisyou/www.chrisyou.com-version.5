@@ -9,6 +9,7 @@ import { PrevVersionComponent } from './prev-version/prev-version.component';
 import { ProjectComponent } from './project/project.component';
 import { RecordingComponent } from './recording/recording.component';
 import { SkillsComponent } from './skills/skills.component';
+import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
@@ -20,37 +21,44 @@ const routes: Routes = [
   {
     path: 'background',
     component: BackgroundComponent,
-    data: { state: 'background' }
+    data: { state: 'background' },
+    canActivate: [AuthGuard],
   },
   {
     path: 'background-mobile',
     component: BackgroundMobileComponent,
-    data: { state: 'background-mobile' }
+    data: { state: 'background-mobile' },
+    canActivate: [AuthGuard],
   },
   {
     path: 'skills',
     component: SkillsComponent,
-    data: { state: 'skills' }
+    data: { state: 'skills' },
+    canActivate: [AuthGuard],
   },
   {
     path: 'project',
     component: ProjectComponent,
-    data: { state: 'project' }
+    data: { state: 'project' },
+    canActivate: [AuthGuard],
   },
   {
     path: 'recording',
     component: RecordingComponent,
-    data: { state: 'recording' }
+    data: { state: 'recording' },
+    canActivate: [AuthGuard],
   },
   {
     path: 'contact',
     component: ContactComponent,
+    canActivate: [AuthGuard],
     data: { state: 'contact' }
   },
   {
     path: 'previous-versions',
     component: PrevVersionComponent,
-    data: { state: 'previous-versions' }
+    data: { state: 'previous-versions' },
+    canActivate: [AuthGuard],
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home', }

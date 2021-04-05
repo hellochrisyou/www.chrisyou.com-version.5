@@ -1,13 +1,14 @@
-<section>
-    <div id="recording-container" fxLayout="column" fxLayoutAlign="space-around center">
-        <div id="recording-title">
-            <header>
-                <div class="title animated bounceInLeft delay-1s">
-                    <h1>RECORDINGS</h1>
-                </div>
-            </header>
+<section class='animate__animated '
+  [ngClass]="{'animate__fadeOut': isFadeOut === true, ' animate__fadeIn': isFadeOut===false}">
+  <div id="recording-container" fxLayout="column" fxLayoutAlign="space-around center">
+    <div id="recording-title">
+      <header>
+        <div class="title">
+          <h1>RECORDINGS</h1>
         </div>
-        <iframe class="mat-elevation-z24" width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/788141319&color=%23717e79&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_playcount=true&download=true&show_artwork=true&sharing=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      </header>
     </div>
+    <iframe class="mat-elevation-z24" width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/788141319&color=%23717e79&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_playcount=true&download=true&show_artwork=true&sharing=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  </div>
 </section>

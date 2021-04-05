@@ -2,6 +2,7 @@ section#project-section {
   background-image: url("../../assets/img/project/bg-project.jpg");
   background-size: cover;
   height: 95vh;
+  top: 0;
 }
 // Ribbon
 .ribbon {
@@ -96,7 +97,7 @@ a {
 }
 #project-section h1 {
   color: white;
-font-family: 'Montserrat', sans-serif; 
+font-family: 'Montserrat', sans-serif;
 font-weight: 900;
 }
 mat-card.project-card {

@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { BaseAnimate } from '../base-animate/base-animate';
+import { RoutingStateService } from '../services/routing-state.service';
 
 import { ImageDialog } from './image-dialog/image-dialog';
 
@@ -11,11 +13,11 @@ import { ImageDialog } from './image-dialog/image-dialog';
   styleUrls: ['./project.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class ProjectComponent implements OnInit {
+export class ProjectComponent extends BaseAnimate implements OnInit {
 
 
 
-  constructor(public dialog: MatDialog) { }
+  constructor(protected routingStateService: RoutingStateService, public dialog: MatDialog) { super(routingStateService) }
 
   ngOnInit(): void {
 

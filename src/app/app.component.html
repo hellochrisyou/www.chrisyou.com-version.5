@@ -3,16 +3,17 @@
   <span id="welcome" class="z-depth-4"></span>
 
   <header class="navbar-fixed">
-    <nav class="row deep-purple darken-3 stroke">
+    <nav class="row darken-3 stroke">
       <div class="col s12">
         <ul>
-          <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-          <li><a routerLink="/background" routerLinkActive="active">Background</a></li>
+          <li><a (click)="navigateHome()">Home</a></li>
+          <li><a (click)="navigateBackground()">Background</a></li>
           <!-- <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li> -->
-          <li><a routerLink="/project" routerLinkActive="active">Projects</a></li>
-          <li><a routerLink="/recording" routerLinkActive="active">Recordings</a></li>
+          <li><a (click)="navigateProject()">Projects</a></li>
+          <li><a (click)="navigateRecording()">Recordings</a></li>
           <!-- <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li> -->
-          <li><a routerLink="/previous-versions" routerLinkActive="active">Versions</a></li>
+          <li><a (click)="navigatePrevVersion()">Versions</a>
+          </li>
         </ul>
       </div>
     </nav>
