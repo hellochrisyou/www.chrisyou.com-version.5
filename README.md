@@ -1,4 +1,5 @@
 <a href="https://www.hello.chrisyou.com"><h1>&#8594; Click here to visit the Website</h1></a>
+<h3>&#9888; Video Preview available at bottom of this page &#9888;</h3>
 <p align="center">
   <img  src="https://storage.googleapis.com/static-images-703/Current%20Portfolio%20Website.png" width="80%"/>
   </p>
