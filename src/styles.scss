@@ -24,6 +24,7 @@ html,
 body {
   height: 100%;
 }
+
 body,
 .container,
 .section {
@@ -125,6 +126,7 @@ video {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 //   End
 
 section {
@@ -155,15 +157,18 @@ hr {
 }
 
 hr {
-  background: #f1e767; /* Old browsers */
-  background: -moz-linear-gradient(top, #f1e767 0%, #feb645 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f1e767 0%, #feb645 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #f1e767 0%,
-    #feb645 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+  background: #f1e767;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f1e767 0%, #feb645 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f1e767 0%, #feb645 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,
+      #f1e767 0%,
+      #feb645 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1e767', endColorstr='#feb645', GradientType=0);
+  /* IE6-9 */
 }
 
 mat-card {
@@ -220,6 +225,7 @@ h1 {
   height: 4px;
   margin-bottom: 1vh;
 }
+
 div.background-body,
 div.background-date {
   width: 50vw;
@@ -230,15 +236,21 @@ h2.version-title {
   color: whitesmoke;
 }
 
+.mat-tab-labels {
+  justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
   .mat-dialog-container {
     height: 85vh !important;
   }
 }
+
 @media only screen and (max-width: 600px) {
   hr {
     height: 0.5rem;
   }
+
   div.background-body,
   div.background-date {
     width: 75vw;

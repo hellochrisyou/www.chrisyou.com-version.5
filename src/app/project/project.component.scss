@@ -4,6 +4,7 @@ section#project-section {
   height: 95vh;
   top: 0;
 }
+
 // Ribbon
 .ribbon {
   background-color: #a00;
@@ -25,9 +26,11 @@ section#project-section {
   box-shadow: 0 0 10px #888;
   z-index: 3000;
 }
+
 a:hover {
   color: goldenrod !important;
 }
+
 .ribbon a {
   border: 1px solid #faa;
   color: #fff;
@@ -40,6 +43,7 @@ a:hover {
   /* shadow */
   text-shadow: 0 0 5px #444;
 }
+
 // End Ribbon
 
 .mat-card-header {
@@ -69,10 +73,12 @@ p {
 .mat-card-header {
   text-align: center;
 }
+
 .mat-card-header .mat-card-subtitle {
   font-weight: 475;
   font-family: "Oswald", sans-serif;
 }
+
 p {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -92,38 +98,71 @@ a {
   text-align: center;
   font-weight: 800;
 }
+
 a {
   cursor: pointer;
 }
+
 #project-section h1 {
   color: white;
-font-family: 'Montserrat', sans-serif;
-font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
+
 mat-card.project-card {
   width: 40%;
   height: auto;
   margin-top: 10vh;
 }
+
 #img-s3fs {
   width: 20vw;
   margin: 0 auto;
 }
+
+.poster {
+  width: 50vw;
+}
+
+#projectTabGroup .hidden-tab-group .mat-tab-header {
+  display: none;
+}
+
+#projectTabGroup .hidden-tab-group {
+  min-width: 100%;
+}
+
+iframe {
+  width: 75%;
+  min-height: 35vw;
+  margin-top: 4rem;
+}
+
+.toggle-text {
+  font-style: oblique;
+  color: black;
+  font-weight: 400;
+}
+
+
 @media only screen and (max-width: 719px) {
   mat-tab-group {
     margin-top: 4vw;
   }
+
   mat-tabs .mat-tab-label {
     width: 60px !important;
   }
+
   mat-card.project-card {
-   width: 90%;
+    width: 90%;
     height: 70%;
     max-width: 550px;
     margin: 2vw auto;
     margin-top: 10vh;
   }
 }
+
 @media only screen and (min-width: 2000px) {
   mat-card {
     min-width: 675px;
